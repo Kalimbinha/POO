@@ -52,7 +52,7 @@ Esses exercícios são projetados para aprimorar suas habilidades em **POO com C
 
 ## 📜 Licença
 
-Este projeto está licenciado sob a **[Licença X](LICENSE)**. 📄
+Este projeto está licenciado por **[Kalimbinha](LICENSE)**. 📄
 
 ---
 
