@@ -74,7 +74,7 @@ Console.WriteLine(carro1.cor); // Saída: vermelho
 ## 🚧 Roadmap:
 
 - [ ] Finalizar os exemplos de classe.
-- [ ] Finalizar os exercícios de .
+- [ ] Finalizar os exercícios de classe.
 
 ---
 
