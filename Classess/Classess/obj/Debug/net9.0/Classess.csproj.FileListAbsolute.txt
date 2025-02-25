@@ -1,0 +1,14 @@
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\obj\Debug\net9.0\Classess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\obj\Debug\net9.0\Classess.AssemblyInfoInputs.cache
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\obj\Debug\net9.0\Classess.AssemblyInfo.cs
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\obj\Debug\net9.0\Classess.csproj.CoreCompileInputs.cache
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\bin\Debug\net9.0\Classess.exe
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\bin\Debug\net9.0\Classess.deps.json
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\bin\Debug\net9.0\Classess.runtimeconfig.json
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\bin\Debug\net9.0\Classess.dll
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\bin\Debug\net9.0\Classess.pdb
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\obj\Debug\net9.0\Classess.dll
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\obj\Debug\net9.0\refint\Classess.dll
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\obj\Debug\net9.0\Classess.pdb
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\obj\Debug\net9.0\Classess.genruntimeconfig.cache
+C:\Users\fernando.bsilva33\source\repos\Classess\Classess\obj\Debug\net9.0\ref\Classess.dll
