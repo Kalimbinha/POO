@@ -1,15 +1,23 @@
-
 ---
 
 # 🚀 POO - Programação Orientada a Objetos
 
 Este projeto é uma solução em C# desenvolvida no Visual Studio, focada em conceitos de **Programação Orientada a Objetos (POO)**. Ele contém uma estrutura de classes para demonstração de conceitos fundamentais como **herança**, **encapsulamento** e **polimorfismo**. 🎯
 
-## 🛠️ Tecnologias Utilizadas
+## 📌 Índice:
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Instalação](#-instalação)
+- [Como Usar](#-como-usar)
+- [Classes (Exemplos)](#-classes-exemplos)
+- [Exercícios de Classe](#-exercícios-de-classe)
+- [Roadmap](#-roadmap)
+- [Licença](#-licença)
 
-- 🔹 C#
-- 🏗️ .NET Framework/Core
-- 🖥️ Visual Studio
+## 🛠️ Tecnologias Utilizadas:
+
+- 🔹 [C#](https://learn.microsoft.com/pt-br/dotnet/csharp/)
+- 🏗️ [.NET Framework/Core](https://dotnet.microsoft.com/)
+- 🖥️ [Visual Studio](https://visualstudio.microsoft.com/)
 
 ## 📥 Instalação:
 
@@ -34,7 +42,20 @@ Este projeto serve como um **modelo de estruturação de classes em C#**. Para r
 
 ---
 
-## 📚 Exercícios dos Slides:
+## 💡 Exemplo de Uso:
+
+Aqui está um exemplo de como usar a classe `Carros`:
+
+```csharp
+// Criando um carro vermelho
+Carros carro1 = new Carros();
+carro1.cor = "vermelho";
+Console.WriteLine(carro1.cor); // Saída: vermelho
+```
+
+---
+
+## 📚 Classes (Exemplos):
 
 - 🚗 **[Carros Coloridos](Classess/Classess/Exercicios_Slide/Exercicio_1.cs)**: Criação de instâncias de carros com cores diferentes.
 - 🎲 **[Carros Aleatórios](Classess/Classess/Exercicios_Slide/Exercicio_2.cs)**: Criação de 1000 instâncias de carros com cores aleatórias e contagem das cores.
@@ -43,19 +64,22 @@ Este projeto serve como um **modelo de estruturação de classes em C#**. Para r
 
 ---
 
-## 📋 Listas de Exercícios:
+## 📋 Exercícios de Classe:
 
 - 💼 **[Cálculo de Salários](Classess/Classess/Lista_1/Exercicio_1.cs)**: Cálculo do salário líquido de funcionários com base em faixas de descontos.
 - 📞 **[Gerenciador de Contatos](Classess/Classess/Lista_1/Funcionarios.cs)**: Classe para gerenciar contatos, com atributos como nome, e-mail e telefone.
 
 ---
 
-## 📜 Licença:
+## 🚧 Roadmap:
 
-Este projeto está licenciado por **[Kalimbinha](LICENSE)**. 📄
+- [ ] Finalizar os exemplos de classe.
+- [ ] Finalizar os exercícios de .
 
 ---
 
-💡 *Se precisar de mais informações, é só me chamar!* 😊
+## 📜 Licença:
+
+Este projeto está licenciado por **[Kalimbinha](LICENSE)**. 📄
 
 ---
