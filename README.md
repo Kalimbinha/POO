@@ -5,13 +5,13 @@
 Este projeto é uma solução em C# desenvolvida no Visual Studio, focada em conceitos de **Programação Orientada a Objetos (POO)**. Ele contém uma estrutura de classes para demonstração de conceitos fundamentais como **herança**, **encapsulamento** e **polimorfismo**. 🎯
 
 ## 📌 Índice:
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Instalação](#-instalação)
-- [Como Usar](#-como-usar)
-- [Classes (Exemplos)](#-classes-exemplos)
-- [Exercícios de Classe](#-exercícios-de-classe)
-- [Roadmap](#-roadmap)
-- [Licença](#-licença)
+- 🛠️ [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- 📥 [Instalação](#-instalação)
+- 🚀 [Como Usar](#-como-usar)
+- 📚 [Classes (Exemplos)](#-classes-exemplos)
+- 📋 [Exercícios de Classe](#-exercícios-de-classe)
+- 🚧 [Roadmap](#-roadmap)
+- 📜 [Licença](#-licença)
 
 ## 🛠️ Tecnologias Utilizadas:
 
