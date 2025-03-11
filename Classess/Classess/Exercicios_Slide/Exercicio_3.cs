@@ -8,38 +8,89 @@
 //de R$ 5 para cada km excedido, apresentando a placa do carro, o modelo, e
 //sua cor
 
-//using System;
+namespace Classess.Exercicios_Slide
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Criação de uma instância de carros
+            Carros carro = new Carros();
 
-//namespace Classess.Exercicios_Slide
-//{
-//    class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//            int contVermelho = 0, contVerde = 0, contAzul = 0;
+            // Menu de seleção de carro
+            Console.WriteLine("Selecione o Número do carro que você deseja utilizar: ");
+            Console.WriteLine("1 - Ferrari, vermelha, 33KM");
+            Console.WriteLine("2 - Kwid, verde, 1KM");
+            Console.WriteLine("3 - Fusca, azul, 5KM");
 
-//            Carros carro = new Carros();
+            // Dicionário com as ações para cada carro
+            Dictionary<int, Tuple<Action, Action, Action, Action>> actions = new Dictionary<int, Tuple<Action, Action, Action, Action>>()
+{
+                { 1, Tuple.Create(
+                    new Action(() => { carro.Cor = "vermelha"; }),
+                    new Action(() => { carro.Nome = "Ferrari"; }),
+                    new Action(() => { carro.Velocidade = 33; }),
+                    new Action(() => { carro.Placa = "ABC-1234"; })
+                )},
 
-//            Random rnd = new Random();
+                { 2, Tuple.Create(
+                    new Action(() => { carro.Cor = "verde"; }),
+                    new Action(() => { carro.Nome = "Kwid"; }),
+                    new Action(() => { carro.Velocidade = 1; }),
+                    new Action(() => { carro.Placa = "XYZ-5678"; })
+                )},
 
-//            Dictionary<int, Action> actions = new Dictionary<int, Action>
-//            {
-//               { 0, () => { carro.cor = "vermelho"; contVermelho++; } },
-//               { 1, () => { carro.cor = "verde"; contVerde++; } },
-//               { 2, () => { carro.cor = "azul"; contAzul++; } }
-//            };
+                { 3, Tuple.Create(
+                    new Action(() => { carro.Cor = "azul"; }),
+                    new Action(() => { carro.Nome = "Fusca"; }),
+                    new Action(() => { carro.Velocidade = 5; }),
+                    new Action(() => { carro.Placa = "DEF-9101"; })
+                )}
+            };
 
-//            for (int i = 0; i < 1000; i++)
-//            {
+            // Solicita a seleção do carro
+            int selectedCar = int.Parse(Console.ReadLine());
+            var selectedActions = actions[selectedCar];
 
-//                int valor = rnd.Next(3);
+            // Executa as ações do carro selecionado
+            selectedActions.Item1(); // Definir cor
+            selectedActions.Item2(); // Definir nome
+            selectedActions.Item3(); // Definir velocidade inicial
+            selectedActions.Item4(); // Definir placa do carro
 
-//                actions[valor]();
+            Console.WriteLine($"Você escolheu o carro: {carro.Nome}, {carro.Cor}, {carro.Velocidade} KM/h.");
 
-//                Console.WriteLine(carro.cor);
-//            }
+            Console.WriteLine("Pressione as teclas 'Up' para acelerar e 'Down' para desacelerar.");
 
-//            Console.WriteLine($"O número de vermelhos é: {contVermelho}, de verdes: {contVerde}, e de azuis: {contAzul}");
-//        }
-//    }
-//}
+            // Loop para simular aceleração e desaceleração
+            while (true)
+            {
+                var key = Console.ReadKey(intercept: true);
+                Console.Clear();
+                if (key.Key == ConsoleKey.UpArrow)
+                {
+                    Console.WriteLine("Você pressionou a tecla UP.");
+                    carro.Acelerar();
+                }
+                else if (key.Key == ConsoleKey.DownArrow)
+                {
+                    Console.WriteLine("Você pressionou a tecla DOWN.");
+                    carro.Desacelerar();
+                }
+                else if (key.Key == ConsoleKey.Escape)
+                {
+                    break;
+                }
+
+                // Verifica se a velocidade excedeu o limite de 80 km/h
+                if (carro.Velocidade > 80)
+                {
+                    double multa = (carro.Velocidade - 80) * 5;
+                    Console.WriteLine($"Multa: R${multa:F2} pela velocidade excedente!");
+                    Console.WriteLine($"Carro: {carro.Nome}, Placa: {carro.Placa}, Cor: {carro.Cor}, Velocidade: {carro.Velocidade} KM/h");
+                }
+            }
+        }
+    }
+}
+
