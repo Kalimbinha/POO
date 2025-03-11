@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Classess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cdc362503d75877a8f61a9acfc3afbaff41623e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Classess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Classess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
