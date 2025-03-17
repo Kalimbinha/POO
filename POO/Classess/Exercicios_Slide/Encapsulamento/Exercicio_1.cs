@@ -7,15 +7,23 @@
 
 using System;
 
-namespace Conta
+namespace Classess.Exercicios_Slide.Encapsulamento
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Conta conta = new Conta(200);
-            Console.WriteLine(conta.Saldo);
             
+            Console.WriteLine("Digite quando você tem na sua carteira: ");
+            int valor = int.Parse(Console.ReadLine());
+            Carteira dinheiro = new Carteira(valor);
+            
+
+            Conta conta = new Conta(valor);
+            Console.WriteLine(conta.Saldo);
+
+            conta.Sacar();
+
         }
     }
 }
