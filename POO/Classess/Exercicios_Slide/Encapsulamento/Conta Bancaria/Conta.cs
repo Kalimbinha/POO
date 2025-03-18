@@ -39,7 +39,7 @@ namespace Classess.Exercicios_Slide.Encapsulamento
         {
             Console.Clear();
             Console.WriteLine("Sua conta foi instanciada");
-            saldo = saldoInicial;
+            saldo = 1000;
         }
     }
 }
