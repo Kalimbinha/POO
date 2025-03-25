@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Pipes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Classess.Exercicios_Slide.Construtores.Funcionarios
 {
@@ -10,7 +12,7 @@ namespace Classess.Exercicios_Slide.Construtores.Funcionarios
     {
         private string nome;
         private string sobrenome;
-        private int id;
+        private int salario;
 
         public string Nome
         {
@@ -26,24 +28,30 @@ namespace Classess.Exercicios_Slide.Construtores.Funcionarios
                 return sobrenome;
             }
         }
-        public int ID
+        public int Salario
         {
             get
             {
-                return id;
+                return salario;
             }
         }
 
-        public Funcionario(string nome, string sobrenome, int id)
+        public Funcionario(string nome, string sobrenome, int salario)
         {
             this.nome = nome;
             this.sobrenome = sobrenome;
-            this.id = id; 
+            this.salario = salario; 
         }
 
         public void ImprimirFuncionario()
         {
-            Console.WriteLine($"{Nome} {Sobrenome} | {ID}");
+            Console.WriteLine($"{Nome} {Sobrenome} | {salario} ");
+        }
+
+        public void SalarioAnual()
+        {
+            double salarioAnual = salario * 12;
+            Console.WriteLine("Salario anual:" + salarioAnual);
         }
     }
 }
